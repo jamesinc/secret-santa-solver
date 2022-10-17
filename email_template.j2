@@ -1,0 +1,46 @@
+From: Secret Santa 1010 <{{ sender }}>
+To: {{ giver["name"] }} <{{ giver["email"] }}>
+MIME-Version: 1.0
+Content-type: text/html
+Subject: {{ subject }}
+
+<pre>
+DO NOT REPLY TO THIS E-MAIL OR IT WILL SPOIL THE SURPRISE
+
+//
+//
+//
+...............................................................................
+... BEEP BOOP ...
+...
+... SANTA'S SECRET ROBOT HELPER 1010 ON-LINE ...
+...
+... DETECTING SECRET SANTAS, STAND BY ...
+...
+... SECRET SANTA FOUND ...
+...
+... GENERATING REPORT ...
+...
+-------------------------------------------------------------------------------
+------------------- BEGIN REPORT, SEQ=0, IDX=0, CYL=XM,45 ---------------------
+-------------------                                       ---------------------
+-- DEAR {{ "{:<50}".format("{},".format(giver["name"])) }}                   --
+--                                                                           --
+-- YOU HAVE BEEN SELECTED TO PARTICIPATE IN A SECRET SANTA. CONGRATULATIONS. --
+--                                                                           --
+-- YOUR TARGET IS... {{ "{:<39}".format(receiver["name"]) }}                 --
+--                                                                           --
+-- MAY YOUR GIFT-GIVING BE SWIFT, MERCILESS, AND OCCURRING WITHIN            --
+-- A BUDGET OF...BUDGET ANALYSIS COMPLETE... {{ "$ {:>6.2f}".format(limit_dollars) }} EXACTLY                --
+--                                                                           --
+-- GIFTS ARE TO BE EXCHANGED {{ opening_day.strftime("%d/%m/%Y") }}.                                     --
+--                                                                           --
+-------------------------------------------------------------------------------
+--------------------------------  END REPORT ----------------------------------
+-------------------------------------------------------------------------------
+
+... HUP: CONNECTION TERMINATED.
+//
+//
+//
+</pre>
